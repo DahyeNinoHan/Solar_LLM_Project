@@ -16,7 +16,7 @@ This is a template repository. Please initialize your python project using this 
    python -m pip install --editable ."[dev, test]"
    ```
    
-5. If you want to build a project
+4. If you want to build a project
    ```
    python -m build
    ```
