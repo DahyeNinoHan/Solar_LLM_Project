@@ -1,4 +1,4 @@
-name: Python Unit Tests
+name: test - unittest
 on: [push, pull_request]
 
 jobs:
