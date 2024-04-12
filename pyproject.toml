@@ -28,5 +28,3 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["black", "ruff", "mypy"]
 test = ["pytest", "pytest-cov", "pytest-mock"]
-
-extend-exclude = [".venv", "venv", "vscode"]
