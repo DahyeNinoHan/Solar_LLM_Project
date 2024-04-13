@@ -12,7 +12,7 @@ This is a template repository. Please initialize your python project using this 
 
 You can install the package locally from the top-level directory:
 ```python
-python -m pip install --upgrade build
+python -m pip install --upgrade pip build
 python -m build
 python -m pip install .
 ```
