@@ -6,18 +6,30 @@ This is a template repository. Please initialize your python project using this 
    - `.github/workflows/ruff.yml`
    - `pyproject.toml`
 
-2. `your_project_name` is your project package name including src.
+2. `project_name` is your project package name including src.
 
-3. Development
-   ```
-   python -m venv .venv
-   source .venv/bin/activate
-   python -m pip install --upgrade pip build
-   python -m pip install --editable ."[dev, test]"
-   ```
-   
-4. If you want to build a project
-   ```
-   python -m build
-   ```
+## Installing and Using the Package
 
+You can install the package locally from the top-level directory:
+```python
+python -m pip install --upgrade build
+python -m build
+python -m pip install .
+```
+
+Distribute
+If you want others to install your package via pip directly, you can upload it to PyPI. This requires an account on PyPI and then you can upload using Twine:
+```
+python -m pip install --upgrade twine
+twine upload dist/*
+```
+
+## Ruff Usage
+Here is how you might proceed with checking for issues:
+```
+ruff check .
+```
+If you need to fix issues automatically and if ruff supports it, you would typically see an option like `--fix` mentioned in the documentation or help command:
+```
+ruff check --fix .
+```
