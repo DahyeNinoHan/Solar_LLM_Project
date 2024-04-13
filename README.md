@@ -2,12 +2,23 @@
 
 This is a template repository. Please initialize your python project using this template.
 
-1. Make sure you have a right python version installed locally and change the version of python from the files below
-   - `.github/workflows/ruff.yml`
-   - `pyproject.toml`
+### 1. Verify and Update Python Version
+Ensure that the correct version of Python is installed on your local system. Update the Python version in the following configuration files:
+- `.github/workflows/*.yml`
+- `pyproject.toml`
 
-2. `project_name` is your project package name including src.
+### 2. Project Package Name
+Replace `project_name` with your actual project package name, which should include the `src` directory.
 
+### 3. Setting Up CI/CD for Release
+To enable Continuous Integration and Continuous Deployment (CI/CD) for releasing your software, follow these steps:
+
+- Configure `CI_CD_TOKEN` as a secret variable through the Actions Settings in your repository.
+- To release, add a tag to your repository by executing the following commands:
+```
+git tag -a v0.0.1 -m "Release version 0.0.1"
+git push origin v0.0.1
+```
 ## Installing and Using the Package
 
 You can install the package locally from the top-level directory:
