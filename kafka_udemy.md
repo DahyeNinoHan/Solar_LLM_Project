@@ -1,7 +1,7 @@
-# Apache Kafka Series - Learn Apache Kafka for Beginners v3
-# Udemy Course (https://www.udemy.com/course/apache-kafka/)
+# Apache Kafka Series - Learn Apache Kafka for Beginners v3 (https://www.udemy.com/course/apache-kafka/)
 
-# Kafka Course Summary
+
+# Course Summary
 
 ## Section 1: Kafka Introduction
 - **Duration:** 10 minutes
